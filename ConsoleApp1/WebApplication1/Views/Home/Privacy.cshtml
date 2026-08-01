@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container py-4" style="max-width: 800px;">
+    <!-- Header Banner -->
+    <div class="card border-0 shadow-lg overflow-hidden rounded-4 mb-4">
+        <div class="bg-gradient bg-primary text-white p-5 text-center position-relative">
+            <h1 class="fw-bold display-6 mb-2">🔒 Privacy Policy</h1>
+            <p class="mb-0 text-white-50">Protected YouTube Playlist Builder Application</p>
+        </div>
+
+        <div class="card-body p-4 p-md-5 bg-white">
+            <p class="lead text-secondary mb-4">
+                Ang application na ito ay dinisenyo upang protektahan at pamahalaan ang iyong data nang ligtas habang gumagamit ng server-rendered forms.
+            </p>
+
+            <!-- Policy Items -->
+            <div class="d-flex align-items-start mb-4">
+                <div class="badge bg-primary-subtle text-primary p-3 rounded-circle me-3 fs-4">
+                    💾
+                </div>
+                <div>
+                    <h5 class="fw-bold mb-1">1. In-Memory Data Storage</h5>
+                    <p class="text-muted small">
+                        Lahat ng playlist at track data ay direktang nakatabi lamang sa temporary memory (RAM) ng server. Walang anumang persistent database storage na ginagamit. Nabubura ang lahat ng data kapag na-restart ang server application.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 text-muted opacity-25" />
+
+            <div class="d-flex align-items-start mb-4">
+                <div class="badge bg-success-subtle text-success p-3 rounded-circle me-3 fs-4">
+                    🔑
+                </div>
+                <div>
+                    <h5 class="fw-bold mb-1">2. Session-Based Authentication</h5>
+                    <p class="text-muted small">
+                        Gumagamit ang app ng encrypted, HTTP-only session cookies upang mapanatiling ligtas ang iyong login state. Walang personal credential tracking o external telemetry analytics na kinokolekta sa iyong session.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 text-muted opacity-25" />
+
+            <div class="d-flex align-items-start mb-4">
+                <div class="badge bg-warning-subtle text-warning p-3 rounded-circle me-3 fs-4">
+                    🛡️
+                </div>
+                <div>
+                    <h5 class="fw-bold mb-1">3. Server-Side Guardrails</h5>
+                    <p class="text-muted small">
+                        Nakalagay ang custom Action Filters sa bawat protected route para makasigurong tanging ang mga verified logged-in users lamang ang makakagawa o makakabago ng playlist data.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="pt-3 text-center">
+                <a asp-controller="Playlist" asp-action="Index" class="btn btn-primary btn-lg rounded-pill px-5 shadow-sm">
+                    &larr; Bumalik sa Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
